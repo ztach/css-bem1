@@ -1,0 +1,18 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    font-family: Lato;
+}
+
+header {
+    background-color: $nav-color;
+}
+
+main {
+}
+
+footer {
+    background-color: rgba(165, 42, 42, 0.281);
+}

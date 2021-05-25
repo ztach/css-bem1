@@ -1,0 +1,104 @@
+// -------------------------------
+//     TYPOGRAPHY VARIABLES
+// -------------------------------
+
+    // *--------- TYPOGRAPHY ---------*
+    $base__font-family: "Open Sans", Helvetica, Tahoma, sans-serif; // 400, 700
+    $base__font-size: 15px;
+    $base__font-weight: 400;
+    $base__font-weight--bold: 700;
+
+    $secondary__font-family: "Dosis", Arial, sans-serif; // 400, 700
+
+    $heading__font-size--small: 18px;
+    $heading__font-size--medium: 24px;
+    $heading__font-size--large: 30px;
+    $heading__font-size--x-large: 36px;
+
+    $rte__font-size: 14px;
+    $rte__line-height: 24px;
+
+    // *--------- COLORS ---------*
+    $base__text-color: #000;
+
+// -------------------------------
+//     TYPOGRAPHY STYLES
+// -------------------------------
+
+    // *--------- GENERAL ---------*
+    body {
+        font: $base__font-weight #{$base__font-size}/1 $base__font-family;
+        color: $base__text-color;
+    }
+
+    strong {
+        font-weight: $base__font-weight--bold;
+    }
+
+    a {
+        @extend %transitionColor;
+    }
+
+    // *--------- HEADINGS ---------*
+    .heading {
+        font-family: $secondary__font-family;
+        font-weight: $base__font-weight--bold;
+        text-transform: uppercase;
+
+        &--small {
+            font-size: $heading__font-size--small;
+        }
+
+        &--medium {
+            font-size: $heading__font-size--medium;
+        }
+
+        &--large {
+            font-size: $heading__font-size--large;
+        }
+
+        &--x-large {
+            font-size: $heading__font-size--x-large;
+        }
+    }
+
+    // *--------- TEXT ---------*
+    .rte {
+        font-size: $rte__font-size;
+        line-height: $rte__line-height;
+
+        h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 30px;
+        }
+
+        p, ul, ol, table, blockquote, img {
+            margin-bottom: 30px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        a {
+            text-decoration: underline;
+            color: $special__text-color;
+
+            &:hover {
+                color: darken($special__text-color, 10);
+            }
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+
+        ul {
+            padding-left: 30px;
+
+            li {
+                list-style: square;
+                line-height: 28px;
+            }
+        }
+    }

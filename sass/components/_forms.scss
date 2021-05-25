@@ -1,0 +1,67 @@
+// -------------------------------
+//     FORMS VARIABLES
+// -------------------------------
+
+    // *--------- TYPOGRAPHY ---------*
+    $form-field__font-size: 14px;
+
+    // *--------- COLORS ---------*
+    $form-field__text-color: #000;
+    $form-field__border-color: #eaeaea;
+    $form-field__background-color: #fff;
+
+// -------------------------------
+//     FORMS STYLES
+// -------------------------------
+
+.form-fieldset {
+    margin-bottom: 20px;
+
+    &--left,
+    &--right {
+        width: calc(50% - 10px);
+    }
+
+    &--left {
+        float: left;
+    }
+
+    &--right {
+        float: right;
+    }
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 20px;
+
+    font-family: $secondary__font-family;
+    font-size: 16px;
+    font-weight: $base__font-weight--bold;
+    text-transform: uppercase;
+
+    &__required {
+        color: $special__text-color;
+    }
+}
+
+.form-field {
+    width: 100%;
+    padding: 0 20px;
+    height: 40px;
+    border: 1px $form-field__border-color solid;
+    background-color: $form-field__background-color;
+
+    font: $base__font-weight #{$form-field__font-size}/40px $base__font-family;
+    color: $form-field__text-color;
+
+    &--rounded {
+        border-radius: 30px;
+    }
+
+    &--textarea {
+        height: 200px;
+
+        resize: none;
+    }
+}

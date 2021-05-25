@@ -1,0 +1,32 @@
+// -------------------------------
+//     CONTENT VARIABLES
+// -------------------------------
+
+    // *--------- TYPOGRAPHY ---------*
+
+    // *--------- COLORS ---------*
+
+// ----------------------------
+//     CONTENT STYLES
+// ----------------------------
+
+.page-title {
+    margin-bottom: 60px;
+
+    text-align: center;
+
+    span {
+        display: inline-block;
+        padding-bottom: 20px;
+        border-bottom: 2px $special__background-color solid;
+
+        &:before,
+        &:after {
+            content: "\00a0";
+        }
+    }
+}
+
+.content {
+    padding: 60px 0;
+}

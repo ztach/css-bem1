@@ -1,0 +1,136 @@
+.card {
+    position: relative;
+    z-index: 100;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        background-color: white;
+        border-radius: $card-border-radius;
+        transform: skew(1.5deg, 1.5deg);
+        background: linear-gradient(315deg, $gd1-color1, $gd1-color2);
+
+        z-index: -1;
+    }
+
+    &__blur {
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background-color: white;
+            border-radius: $card-border-radius;
+            background: linear-gradient(135deg, red, blue);
+            filter: blur(30px);
+            opacity: 0;
+            transition: 1s;
+
+            z-index: -1;
+        }
+
+        &::after {
+            filter: blur(50px);
+        }
+
+        &:hover::before,
+        &:hover::after {
+            opacity: 1;
+        }
+
+        &:hover &__img {
+            filter: grayscale(0) brightness(100%);
+        }
+    }
+
+    &:nth-child(2)::before {
+        background: linear-gradient(315deg, $gd2-color1, $gd2-color2);
+    }
+
+    &:nth-child(3)::before {
+        background: linear-gradient(315deg, $gd3-color1, $gd3-color2);
+    }
+
+    &__content {
+        overflow: hidden;
+        border-radius: $card-border-radius;
+        height: 100%;
+    }
+
+    &__img {
+        width: $img-width;
+        height: $img-height;
+        display: block;
+    }
+
+    &__title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: right;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7) 50%);
+        padding: 40px 20px 15px;
+        font-size: 2rem;
+        border-radius: $card-border-radius;
+    }
+
+    &__author {
+        font-size: 0.8rem;
+        padding: 10px 0 0 0;
+        opacity: 0.6;
+    }
+
+    &__info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: $card-border-radius;
+
+        background-color: $info-backgroud-color;
+        padding: 10px 20px;
+        cursor: help;
+
+        clip-path: circle(5% at 86% 8%);
+        transition: background-color 500ms ease-in-out, clip-path 500ms ease-in-out;
+
+        &:hover {
+            background-color: $info-backgroud-hover-color;
+            clip-path: circle(70%);
+        }
+
+        &:hover .card__icon {
+            color: transparent;
+        }
+
+        & p {
+            line-height: 1.5;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        right: 30px;
+        top: 15px;
+        font-weight: 700;
+        font-size: 1.2rem;
+
+        display: block;
+        padding: 10px;
+        transition: color 500ms;
+    }
+
+    &__info__title {
+        font-weight: 600;
+        padding: 10px 0 20px;
+    }
+}

@@ -1,0 +1,38 @@
+// -------------------------------
+//     BUTTONS VARIABLES
+// -------------------------------
+
+    // *--------- TYPOGRAPHY ---------*
+    $button__font-size: 16px;
+
+    // *--------- COLORS ---------*
+    $button__text-color: #fff;
+
+// -------------------------------
+//     BUTTONS STYLES
+// -------------------------------
+
+.button {
+    display: inline-block;
+    height: 50px;
+    padding: 0 20px;
+    border: none;
+    background: $special__background-color;
+
+    cursor: pointer;
+
+    font-family: $secondary__font-family;
+    font-size: $button__font-size;
+    font-weight: $base__font-weight--bold;
+    line-height: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $button__text-color;
+
+    @extend %transitionAll;
+
+    &--full {
+        display: block;
+        width: 100%;
+    }
+}

@@ -1,0 +1,75 @@
+// -------------------------------
+//     SOCIAL VARIABLES
+// -------------------------------
+
+    // *--------- TYPOGRAPHY ---------*
+    $social-icon__font-size: 17px;
+    $social-text__font-size: 16px;
+
+    // *--------- COLORS ---------*
+    $social-link__background-color: #00cd91;
+    $social-icon__text-color: #fff;
+    $social-icon__text-color--full: #00dd9c;
+    $social-icon__background-color: #e1e1e1;
+    $social-icon__background-color--full: #fff;
+    $social-text__text-color: #fff;
+
+// -------------------------------
+//     SOCIAL STYLES
+// -------------------------------
+
+.social {
+    font-size: 0;
+    line-height: 0;
+
+    &__icon {
+        display: inline-block;
+        width: 42px;
+        height: 42px;
+        margin-right: 10px;
+        border-radius: 50%;
+        background-color: $social-icon__background-color;
+
+        font-size: $social-icon__font-size;
+        line-height: 42px;
+        text-align: center;
+        color: $social-icon__text-color;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &--full {
+            width: 36px;
+            height: 36px;
+            background-color: $social-icon__background-color--full;
+
+            line-height: 36px;
+            color: $social-icon__text-color--full;
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        padding: 3px 25px 3px 3px;
+        margin-right: 20px;
+        border-radius: 30px;
+        background-color: $social-link__background-color;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__text {
+        margin-left: 10px;
+
+        font-family: $secondary__font-family;
+        font-size: $social-text__font-size;
+        font-weight: $base__font-weight--bold;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $social-text__text-color;
+
+    }
+}

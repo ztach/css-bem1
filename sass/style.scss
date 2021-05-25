@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+// *--------- VARIABLES ---------*
+@import "helpers/variables";
+
+// *--------- MIXINS ---------*
+@import "helpers/mixins";
+
+// *--------- CSS RESET ---------*
+//@import "base/reset";
+
+// *--------- TYPOGRAPHY ---------*
+//@import "base/typography";
+
+// ---------------------
+//     COMPONENTS
+// ---------------------
+
+// ---------------------
+//     LAYOUT
+// ---------------------
+
+// *--------- GENERAL ---------*
+@import "layout/general";
+
+// *--------- HEADER ---------*
+@import "layout/header";
+@import "components/nav";
+// *--------- GALERIA ---------*
+@import "layout/galery";
+@import "components/cards";
+
+// *--------- FOOTER ---------*
+@import "layout/footer";
+
+// *--------- EXTENDS ---------*
+//@import "base/extends";

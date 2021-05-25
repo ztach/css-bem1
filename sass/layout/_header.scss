@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+
+    &--view {
+        color: white;
+        height: 66px;
+    }
+
+    &__logo {
+        width: 30%;
+        &__img {
+            width: 50px;
+            height: auto;
+        }
+    }
+}

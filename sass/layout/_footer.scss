@@ -1,0 +1,19 @@
+.footer {
+    background-color: black;
+    color: white;
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0.6;
+    font-size: 0.8rem;
+
+    &__copyright,
+    &__email {
+        opacity: 0.6;
+        color: yellow;
+    }
+}
