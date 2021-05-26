@@ -1,15 +1,16 @@
 .galeria {
     background: radial-gradient(ellipse at center, #222, #222, #111);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     color: white;
     overflow: hidden;
-
+    
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-content: center;
     align-items: center;
+    height: 100%;
 
-    padding-bottom: 50px;
 
     &__title {
         font-size: 2rem;
@@ -20,7 +21,6 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         height: 100%;
-        column-gap: 100px;
-        row-gap: 100px;
+        gap: 100px;
     }
 }
