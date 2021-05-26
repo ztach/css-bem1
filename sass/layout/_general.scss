@@ -1,28 +1,29 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
-    align-items: stretch; 
-    align-content: center; 
-
-    width: 100vw;
-    height: 100vh;
+    justify-content: space-between;
     font-family: Lato;
+}
+
+.galery__wrapper {
+    height: 100vh;
+}
+
+.ksiazki__wrapper {
+    min-height: 100vh;
 }
 
 header {
     background-color: $nav-color;
+    height: 65px;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-    align-items: stretch;
-    width: 100%;
-    height: 100%;    
+    display: block;
+    flex: 1;
 }
 
 footer {
     background-color: rgba(165, 42, 42, 0.281);
+    height: 65px;
 }
