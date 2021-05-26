@@ -1,6 +1,8 @@
 .card {
     position: relative;
     z-index: 100;
+    width: 300px;
+    height: 450px;
 
     &::before {
         content: "";
@@ -13,9 +15,12 @@
         border-radius: $card-border-radius;
         transform: skew(1.5deg, 1.5deg);
         background: linear-gradient(315deg, $gd1-color1, $gd1-color2);
-
         z-index: -1;
-    }
+        -webkit-transform: skew(1.5deg, 1.5deg);
+        -moz-transform: skew(1.5deg, 1.5deg);
+        -ms-transform: skew(1.5deg, 1.5deg);
+        -o-transform: skew(1.5deg, 1.5deg);
+}
 
     &__blur {
         &::before,

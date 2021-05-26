@@ -157,21 +157,20 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 50px 0;
+  padding-bottom: 50px;
 }
 
 .galeria__title {
-  font-size: 3rem;
-  padding: 30px 0 100px;
+  font-size: 2rem;
+  padding: 5px 0 20px;
 }
 
 .galeria__card {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  height: 100%;
   -webkit-column-gap: 100px;
           column-gap: 100px;
   row-gap: 100px;
@@ -180,6 +179,8 @@ footer {
 .card {
   position: relative;
   z-index: 100;
+  width: 300px;
+  height: 450px;
 }
 
 .card::before {
@@ -191,10 +192,13 @@ footer {
   bottom: -2px;
   background-color: white;
   border-radius: 20px;
-  -webkit-transform: skew(1.5deg, 1.5deg);
-          transform: skew(1.5deg, 1.5deg);
+  transform: skew(1.5deg, 1.5deg);
   background: linear-gradient(315deg, #12c2e9, #f64f59);
   z-index: -1;
+  -webkit-transform: skew(1.5deg, 1.5deg);
+  -moz-transform: skew(1.5deg, 1.5deg);
+  -ms-transform: skew(1.5deg, 1.5deg);
+  -o-transform: skew(1.5deg, 1.5deg);
 }
 
 .card__blur::before, .card__blur::after {
