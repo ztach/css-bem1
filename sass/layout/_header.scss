@@ -10,6 +10,21 @@
 
     &__logo {
         width: 30%;
+
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        padding: 0 20px 0 0;
+        line-height: 0.7;
+
+        &__text {
+            padding: 0px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            line-height: 0.02;
+        }
+
         &__img {
             width: 50px;
             height: auto;

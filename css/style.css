@@ -14,10 +14,14 @@ body {
 
 .galery__wrapper {
   height: 100vh;
+  padding: 0;
+  margin: 0;
 }
 
 .ksiazki__wrapper {
   min-height: 100vh;
+  padding: 0;
+  margin: 0;
 }
 
 header {
@@ -57,6 +61,31 @@ footer {
 
 .header__logo {
   width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 0 20px 0 0;
+  line-height: 0.7;
+}
+
+.header__logo__text {
+  padding: 0px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  line-height: 0.02;
 }
 
 .header__logo__img {
@@ -94,7 +123,7 @@ footer {
 .nav__list__item {
   display: block;
   text-align: center;
-  padding: 2% 5%;
+  padding: 18px 50px;
   border-bottom: 5px solid #7d7d7e;
   position: relative;
 }
@@ -113,14 +142,24 @@ footer {
 .nav__list__item__link {
   text-decoration: none;
   color: white;
+  padding: 15px 50px;
+}
+
+.nav__list__item__link:link {
+  color: blue;
+}
+
+.nav__list__item__link:active {
+  color: lime;
 }
 
 /**/
 .subitem {
   visibility: hidden;
   position: absolute;
-  top: 75%;
-  left: 0%;
+  top: 110%;
+  left: 20px;
+  right: -20px;
   z-index: 1000;
   background-color: #7d7d7e;
   line-height: 3;
@@ -130,6 +169,7 @@ footer {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
+  margin: 0;
   display: block;
 }
 
@@ -360,5 +400,6 @@ footer {
 .footer__copyright, .footer__email {
   opacity: 0.6;
   color: yellow;
+  padding: 0 10px;
 }
 /*# sourceMappingURL=style.css.map */

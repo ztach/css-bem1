@@ -14,10 +14,10 @@
         justify-content: space-around;
         justify-items: center;
 
-        &__item {
+        &__item  {
             display: block;
             text-align: center;
-            padding: 2% 5%;
+            padding: 18px 50px;
 
             border-bottom: 5px solid $nav-color;
 
@@ -34,20 +34,25 @@
                 }
             }
 
+          
             &__link {
                 text-decoration: none;
                 color: white;
+                padding: 15px 50px;
+
+                &:link { color: blue } 
+                &:active { color: lime } 
             }
         }
     }
 }
-
 /**/
 .subitem {
     visibility: hidden;
     position: absolute;
-    top: 75%;
-    left: 0%;
+    top: 110%;
+    left: 20px;
+    right: -20px;
     z-index: 1000;
     background-color: $nav-color;
     line-height: 3;
@@ -55,6 +60,7 @@
     opacity: 0;
     box-sizing: border-box;
     padding: 0;
+    margin: 0;
 
     display: block;
 
