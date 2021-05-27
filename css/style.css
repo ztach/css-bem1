@@ -139,18 +139,26 @@ footer {
   opacity: 1;
 }
 
+.nav__list__item:active {
+  background-color: lime;
+}
+
+.nav__list__item:visited {
+  background-color: #f64f59;
+}
+
 .nav__list__item__link {
   text-decoration: none;
   color: white;
   padding: 15px 50px;
 }
 
-.nav__list__item__link:link {
-  color: blue;
+.nav__list__item__link:active {
+  background-color: lime;
 }
 
-.nav__list__item__link:active {
-  color: lime;
+.nav__list__item__link:visited {
+  background-color: #f64f59;
 }
 
 /**/

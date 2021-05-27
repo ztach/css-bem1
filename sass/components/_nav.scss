@@ -32,16 +32,29 @@
                     visibility: visible;
                     opacity: 1;
                 }
+
             }
 
-          
+            &:active {
+                 background-color: lime; 
+                }
+
+            &:visited {
+                background-color: $gd1-color2;
+            }
+
             &__link {
                 text-decoration: none;
                 color: white;
                 padding: 15px 50px;
 
-                &:link { color: blue } 
-                &:active { color: lime } 
+                &:active {
+                    background-color: lime; 
+                    }
+                    
+                &:visited {
+                    background-color: $gd1-color2;
+                }
             }
         }
     }
